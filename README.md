@@ -1,5 +1,8 @@
 Quick and dirty Dockerfile for [Pagekit](http://www.pagekit.com/)
 
+* [Standalone](#standalone)
+* [With fig (recommended)](#with-fig-recommended)
+
 ## Standalone
 
 ### Start
@@ -51,7 +54,9 @@ The order in which you start container is important here, because `pagekit_web_1
 
 Also, please note that a new random port will be allocated to port 80 of `pagekit_web_1`, you have to use `docker port` again to get it.
 
-## With [fig](http://www.fig.sh/)
+## With [fig](http://www.fig.sh/) (recommended)
+
+See [Fig's documentation](http://www.fig.sh/install.html) on how to install fig.
 
 ### Start
 
