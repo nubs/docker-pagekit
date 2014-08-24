@@ -36,6 +36,11 @@ The port will likely be different for you.
 
 You can now access your Pagekit installation at http://localhost:49156/ (or whatever port Docker assigned to port 80 of your `pagekit_web_1` container).
 
+**Database information**
+
+* We've set the root password to `changethis` using the `MYSQL_ROOT_PASSWORD` env var in `orchardup/mysql`. You can adjust the command line to change it to whatever you like.
+* Use `pagekit_db_1` as the database host.
+
 ### Stop
 
 ```
@@ -80,6 +85,11 @@ dockerpagekit_web_1    /init.sh             Up       49159->80/tcp
 ```
 
 You can now access your Pagekit instance at `http://localhost:49159/`.
+
+**Database information**
+
+* Default root password for the mysql database is `changethis`. You should change it in the `fig.yml`.
+* Use `dockerpagekit_db_1` as the database host.
 
 ### Stop
 
