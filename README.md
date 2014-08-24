@@ -49,13 +49,13 @@ $ docker stop pagekit_web_1 pagekit_db_1
 
 ### Restart
 
-After having stopped the containers, you can restart them with `docker restart`:
+After having stopped the containers, you can restart them with `docker start`:
 
 ```
 $ docker start pagekit_db_1 pagekit_web_1
 ```
 
-The order in which you start container is important here, because `pagekit_web_1` needs a link from `pagekit_db_1`, so you have to start the db container first.
+The order in which you start the containers is important here, because `pagekit_web_1` needs a link from `pagekit_db_1`, so you have to start the db container first.
 
 Also, please note that a new random port will be allocated to port 80 of `pagekit_web_1`, you have to use `docker port` again to get it.
 
