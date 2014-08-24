@@ -89,7 +89,7 @@ You can now access your Pagekit instance at `http://localhost:49159/`.
 **Database information**
 
 * Default root password for the mysql database is `changethis`. You should change it in the `fig.yml`.
-* Use `dockerpagekit_db_1` as the database host.
+* Use `pagekit_db_1` as the database host.
 
 ### Stop
 
