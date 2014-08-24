@@ -1,0 +1,19 @@
+web:
+    image: ubermuda/pagekit
+    ports:
+        - 8000:80
+    links:
+        - db
+    volumes_from:
+        - data
+db:
+    image: orchardup/mysql
+    environment:
+        MYSQL_ROOT_PASSWORD: changethis
+        MYSQL_DATABASE: pagekit
+data:
+    image: busybox
+    command: /bin/true
+    volumes:
+        - /pagekit/storage
+        - /pagekit/app/cache
