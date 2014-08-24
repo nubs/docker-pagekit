@@ -27,7 +27,7 @@ RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
 
 ADD init.sh /init.sh
 
-VOLUME ["/pagekit/storage"]
+VOLUME ["/pagekit/storage", "/pagekit/app/cache"]
 
 EXPOSE 80
 
